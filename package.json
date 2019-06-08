@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha src/*.spec.js",
+    "test": "mocha src/*.spec.js ",
     "test1": "mocha src/1-*.spec.js",
     "test2": "mocha src/2-*.spec.js",
     "test3": "mocha src/3-*.spec.js"
