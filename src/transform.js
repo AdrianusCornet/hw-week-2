@@ -25,12 +25,8 @@ function Sorter(list, person) {
         return list
     }
     if (below21(person)) {
-        if (!list['20 and younger']) {
-            list['20 and younger'] = [person]
-        } else {
-            list['20 and younger'].push(person)
-        }
-    }
+        !list['20 and younger'] ? list['20 and younger'] = [person] : list['20 and younger'].push(person)
+    } 
     return list
 }
 
