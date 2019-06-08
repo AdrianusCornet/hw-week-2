@@ -19,12 +19,18 @@ const childFilterData =[
 function groupAdultsByAgeRange(persons) {
     
 }
-function filterOutChildren(persons) {
-    return persons.filter(person => person.age >= 18)
+
+function isAdult(person) {
+    return person.age >= 18 ? true : false
 }
 
 module.exports.groupAdultsByAgeRange = groupAdultsByAgeRange
 
 /* --- tests --- */
 
-console.log('cf =', filterOutChildren(childFilterData))
+// isAdult()
+function filterOutChildren(persons) {
+    return persons.filter(isAdult)
+}
+//console.log('cf =', filterOutChildren(childFilterData))
+
