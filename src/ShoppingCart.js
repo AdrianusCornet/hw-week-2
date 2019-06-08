@@ -14,4 +14,7 @@ module.exports = class ShoppingCart{
             }
         )
     }
+    clear() {
+        this.items = []
+    }
 }
