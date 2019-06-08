@@ -1,21 +1,3 @@
-/* --- test data --- */
-const childFilterData =[
-    {
-        name: 'child (17)',
-        age: 17
-    },
-    {
-        name: 'ege case (18)',
-        age: 18
-    },
-    {
-        name: 'adult (20)',
-        age: 20
-    }
-]
-
-/* --- main --- */
-
 function groupAdultsByAgeRange(persons) {
     return persons.reduce(Sorter, {})
 }
@@ -55,5 +37,3 @@ function below51(person) {
 }
 
 module.exports.groupAdultsByAgeRange = groupAdultsByAgeRange
-
-/* --- tests --- */
